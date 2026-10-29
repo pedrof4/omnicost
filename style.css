@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background: #fafafa;
+  color: #222;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+input, select {
+  padding: 8px;
+  font-size: 14px;
+}
+
+#desc-input {
+  flex: 2;
+  min-width: 180px;
+}
+
+#amount-input {
+  flex: 1;
+  min-width: 100px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  margin-bottom: 6px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+li .desc {
+  flex: 1;
+  font-weight: bold;
+}
+
+li .cat {
+  font-size: 12px;
+  background: #eef;
+  color: #446;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+li .amount {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+#total {
+  text-align: right;
+  color: #222;
+  border-top: 2px solid #ddd;
+  padding-top: 10px;
+}

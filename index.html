@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>omnicost</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gastos</h1>
+
+  <form id="expense-form">
+    <input type="text" id="desc-input" placeholder="Descrição (ex: Mercado)" required>
+    <input type="number" id="amount-input" placeholder="Valor (R$)" step="0.01" min="0" required>
+    <select id="category-input">
+      <option value="Alimentação">Alimentação</option>
+      <option value="Transporte">Transporte</option>
+      <option value="Lazer">Lazer</option>
+      <option value="Contas">Contas</option>
+      <option value="Outros">Outros</option>
+    </select>
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <ul id="expense-list"></ul>
+
+  <h2 id="total">Total: R$ 0,00</h2>
+
+  <script src="script.js"></script>
+</body>
+</html>
